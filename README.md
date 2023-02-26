@@ -1,9 +1,11 @@
 ## Multiscale modeling of inelastic materials with Thermodynamics-based Artificial Neural Networks (TANN)
 
+<center><img src="./TANN - Numerical Geolab/_images/abstract.png"  alt="centered image" width="40%" height="20%"></center>
+
 - repository under construction ( * )
 
-### 1. Micromechanical simulations using the Finite Element Method
-``` lattice ```
+### 1. Micromechanical simulations using the Finite Element Method - ``` lattice ```
+
 
 The class and scripts refer to the Finite Element (FE) code used in ([Masi, Stefanou, 2022](https://doi.org/10.1016/j.cma.2022.115190)) to generate data for training Thermdoynamics-based Artificial Neural Networks and their validation.
 
@@ -21,7 +23,7 @@ The class and scripts refer to the Finite Element (FE) code used in ([Masi, Stef
 - ``` lattice_torsional.py ``` contains the script for running the FE analysis of a lattice structure with fixed bottom end and imposed torsional displacement (see [Masi, Stefanou, 2022](https://doi.org/10.1016/j.cma.2022.115190)).
 
 
-### 2. Multiscale simulation with TANN
+### 2. Multiscale simulation with TANN - ``` TANN - Numerical Geolab ```
 
 In this application we will see how to use user-materials derived from artificial neural networks, and more precisely Thermodynamics-based Artificial Neural Networks (TANN), within Numerical Geolab.
 We will see the steps necessary to set the finite element formulation and the boundary value problem, with particular attention on how the user-material is imported and the coupling with tensoflow.
