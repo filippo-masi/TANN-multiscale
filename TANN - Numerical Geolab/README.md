@@ -2,13 +2,16 @@
 
 In this application we will see how to use user-materials derived from artificial neural networks, and more precisely Thermodynamics-based Artificial Neural Networks (TANN), within Numerical Geolab.
 We will see the steps necessary to set the finite element formulation and the boundary value problem, with particular attention on how the user-material is imported and the coupling with tensoflow.
-The application consists of a 3D model subjected to torsional deformations. The material used represents the volume average behavior of a lattice microstructure with bars displaying elasto-plastic rate-independent behavior, with von Mises yield criterion, and kinematic hardening. For more, we refer to [1]_, [2]_ .
+The application consists of a 3D model subjected to torsional deformations. The material used represents the volume average behavior of a lattice microstructure with bars displaying elasto-plastic rate-independent behavior, with von Mises yield criterion, and kinematic hardening. For more, we refer to [1-3] .
 
 [1] Masi, F., Stefanou, I., Vannucci, P. and Maffi-Berthier, V., 2021. Thermodynamics-based Artificial Neural Networks for constitutive modeling. Journal of the Mechanics and Physics of Solids, 147, p.104277. doi: [10.1016/j.jmps.2020.104277](https://doi.org/10.1016/j.jmps.2020.104277)
 
 [2] Masi, F. and Stefanou, I., 2022. Multiscale modeling of inelastic materials with Thermodynamics-based Artificial Neural Networks (TANN). Computer Methods in Applied Mechanics and Engineering, 398, p.115190.  doi: [10.1016/j.cma.2022.115190](https://doi.org/10.1016/j.cma.2022.115190)
 
-### Begining of file
+[3] Stathas, A. and Stefanou, I., 2022. Numerical Geolab, FEniCS for inelasticity. The FEniCS Conference.
+
+
+### Beginning of file
 
 
 The file begins as follows:
@@ -175,11 +178,8 @@ For this simple geometry the capabilities of dolfin can be used to define a tetr
 
 For the domain at hand we specify a discretization with nx=ny=12 elements along x[0] and x[1] components and nz=24 elements along the x[2] component. The MeshFunction() method of dolfin is used to provide the mesh object, the interior domain and the boundary domains. The following model is the produced:
 
-.. figure:: _images/mesh_AI.png
-         :height: 295 px
-         :width: 379 px
-         :alt: alternate text
-         :align: center
+<img src="./_images/mesh_AI.png"  width="20%" height="20%">
+
          
          Image of the mesh produced by BoxMesh(). The domain was exported with the help of the third party software Paraview.
 
@@ -344,17 +344,13 @@ The convergence is evaluated in terms of the relative percentage error of the to
 From the analysis, we can observe that a mesh with 12x12x24 yields a relative error in the energy less than 5%.
 
 
-<img src="./_images/convergece_AI.png"  width="60%" height="30%">
+<img src="./_images/convergece_AI.png"  width="30%" height="20%">
          
          Relative percentage error of the total energy with respect to the number of elements. 
 
 Below, we can observe torsional warping, i.e., the tendency of the structure to have non-zero vertical displacements due to the torsional deformation. 
 
-.. figure:: _images/displacement_vertical_AI.png
-         :height: 295 px
-         :width: 379 px
-         :alt: alternate text
-         :align: center
+<img src="./_images/displacement_vertical_AI.png"  width="30%" height="20%">
          
          Torsional warping: vertical displacement field due to a torsional deformation. The displacement fields were exported with the help of the third party software Paraview.
 
