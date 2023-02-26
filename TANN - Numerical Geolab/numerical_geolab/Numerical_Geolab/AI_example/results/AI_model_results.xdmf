@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<!DOCTYPE Xdmf SYSTEM "Xdmf.dtd" []>
+<Xdmf Version="3.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <Domain>
+    <Grid Name="TimeSeries" GridType="Collection" CollectionType="Temporal">
+      <Grid Name="mesh" GridType="Uniform">
+        <Topology NumberOfElements="20736" TopologyType="Tetrahedron" NodesPerElement="4">
+          <DataItem Dimensions="20736 4" NumberType="UInt" Format="HDF">AI_model_results.h5:/Mesh/0/mesh/topology</DataItem>
+        </Topology>
+        <Geometry GeometryType="XYZ">
+          <DataItem Dimensions="4225 3" Format="HDF">AI_model_results.h5:/Mesh/0/mesh/geometry</DataItem>
+        </Geometry>
+        <Time Value="0" />
+        <Attribute Name="Gen_Diplacements" AttributeType="Vector" Center="Node">
+          <DataItem Dimensions="4225 3" Format="HDF">AI_model_results.h5:/VisualisationVector/0</DataItem>
+        </Attribute>
+        <Attribute Name="Stresses" AttributeType="Vector" Center="Node">
+          <DataItem Dimensions="4225 6" Format="HDF">AI_model_results.h5:/VisualisationVector/1</DataItem>
+        </Attribute>
+        <Attribute Name="State_Variables" AttributeType="Vector" Center="Node">
+          <DataItem Dimensions="4225 36" Format="HDF">AI_model_results.h5:/VisualisationVector/2</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid>
+        <xi:include xpointer="xpointer(//Grid[@Name=&quot;TimeSeries&quot;]/Grid[1]/*[self::Topology or self::Geometry])" />
+        <Time Value="1" />
+        <Attribute Name="Gen_Diplacements" AttributeType="Vector" Center="Node">
+          <DataItem Dimensions="4225 3" Format="HDF">AI_model_results.h5:/VisualisationVector/3</DataItem>
+        </Attribute>
+        <Attribute Name="Stresses" AttributeType="Vector" Center="Node">
+          <DataItem Dimensions="4225 6" Format="HDF">AI_model_results.h5:/VisualisationVector/4</DataItem>
+        </Attribute>
+        <Attribute Name="State_Variables" AttributeType="Vector" Center="Node">
+          <DataItem Dimensions="4225 36" Format="HDF">AI_model_results.h5:/VisualisationVector/5</DataItem>
+        </Attribute>
+      </Grid>
+    </Grid>
+  </Domain>
+</Xdmf>
