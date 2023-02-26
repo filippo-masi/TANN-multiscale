@@ -344,8 +344,7 @@ The convergence is evaluated in terms of the relative percentage error of the to
 From the analysis, we can observe that a mesh with 12x12x24 yields a relative error in the energy less than 5%.
 
 
-
-![Screenshot](./_images/convergece_AI.png)
+<img src="./_images/convergece_AI.png"  width="60%" height="30%">
          
          Relative percentage error of the total energy with respect to the number of elements. 
 
