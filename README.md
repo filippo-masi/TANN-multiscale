@@ -22,10 +22,19 @@ The class and scripts refer to the Finite Element (FE) code used in ([Masi, Stef
 
 
 ### 2. Multiscale simulation with TANN
-( * ) For running part of the code Numerical Geolab* software is needed. The software is currently under review and will be uploaded online soon.
-- A Stathas and I Stefanou. Numerical Geolab, FEniCS for inelasticity. In The FEniCS Conference, 2022.
 
-For more information, please [contact me](mailto:filippo.masi@sydney.edu.au)
+In this application we will see how to use user-materials derived from artificial neural networks, and more precisely Thermodynamics-based Artificial Neural Networks (TANN), within Numerical Geolab.
+We will see the steps necessary to set the finite element formulation and the boundary value problem, with particular attention on how the user-material is imported and the coupling with tensoflow.
+The application consists of a 3D model subjected to torsional deformations. The material used represents the volume average behavior of a lattice microstructure with bars displaying elasto-plastic rate-independent behavior, with von Mises yield criterion, and kinematic hardening. For more, we refer to [1,2].
+
+
+<img src="./TANN - Numerical Geolab/_images/displacement_vertical_AI.png"  width="25%" height="20%">
+         
+         Torsional warping: vertical displacement field due to a torsional deformation. The displacement fields were exported with the help of the third party software Paraview.
+
+
+( * ) For running part of the code Numerical Geolab [2] software is needed. The software is currently under review and will be uploaded online soon.
+For more information, [contact me](mailto:filippo.masi@sydney.edu.au)
 
 
 
@@ -33,7 +42,9 @@ For more information, please [contact me](mailto:filippo.masi@sydney.edu.au)
 
 If you use this code, please cite the related papers:
 
-F Masi, I Stefanou (2022). "[Multiscale modeling of inelastic materials with Thermodynamics-based Artificial Neural Networks (TANN)](https://doi.org/10.1016/j.cma.2022.115190)". Computer Methods in Applied Mechanics and Engineering 398, 115190.
+[1] F Masi, I Stefanou (2022). "[Multiscale modeling of inelastic materials with Thermodynamics-based Artificial Neural Networks (TANN)](https://doi.org/10.1016/j.cma.2022.115190)". Computer Methods in Applied Mechanics and Engineering 398, 115190.
+
+[2] Stathas, A. and Stefanou, I., 2022. Numerical Geolab, FEniCS for inelasticity. The FEniCS Conference.
 
 
     @article{masi2022multiscale,
