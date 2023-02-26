@@ -29,12 +29,11 @@ For more information, please [contact me](mailto:filippo.masi@sydney.edu.au)
 
 
 
+### References
 
 If you use this code, please cite the related papers:
 
 F Masi, I Stefanou (2022). "[Multiscale modeling of inelastic materials with Thermodynamics-based Artificial Neural Networks (TANN)](https://doi.org/10.1016/j.cma.2022.115190)". Computer Methods in Applied Mechanics and Engineering 398, 115190.
-
-#### Citation
 
 
     @article{masi2022multiscale,
