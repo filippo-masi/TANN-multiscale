@@ -1,6 +1,6 @@
 ## Multiscale modeling of inelastic materials with Thermodynamics-based Artificial Neural Networks (TANN)
 
-<center><img src="./TANN - Numerical Geolab/_images/abstract.png"  alt="centered image" width="40%" height="20%"></center>
+<center><img src="./TANN - Numerical Geolab/_images/abstract.png"  alt="centered image" width="50%" height="20%"></center>
 
 - repository under construction ( * )
 
