@@ -25,8 +25,7 @@ The class and scripts refer to the Finite Element (FE) code used in ([Masi, Stef
 
 ### 2. Multiscale simulation with TANN - ``` TANN - Numerical Geolab ```
 
-In this application we will see how to use user-materials derived from artificial neural networks, and more precisely Thermodynamics-based Artificial Neural Networks (TANN), within Numerical Geolab.
-We will see the steps necessary to set the finite element formulation and the boundary value problem, with particular attention on how the user-material is imported and the coupling with tensoflow.
+Hands-on: employ TANN as an user-material to perform Finite Element analyses [using Numerical Geolab, 2].
 The application consists of a 3D model subjected to torsional deformations. The material used represents the volume average behavior of a lattice microstructure with bars displaying elasto-plastic rate-independent behavior, with von Mises yield criterion, and kinematic hardening. For more, we refer to [1,2].
 
 
