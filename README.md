@@ -25,7 +25,7 @@ The class and scripts refer to the Finite Element (FE) code used in ([Masi, Stef
 
 ### 2. Multiscale simulation with TANN - ``` TANN - Numerical Geolab ```
 
-Hands-on: employ TANN as an user-material to perform Finite Element analyses [using Numerical Geolab, 2].
+Hands-on: employ TANN as a user-material to perform Finite Element analyses [using Numerical Geolab, 2].
 The application consists of a 3D model subjected to torsional deformations. The material used represents the volume average behavior of a lattice microstructure with bars displaying elasto-plastic rate-independent behavior, with von Mises yield criterion, and kinematic hardening. For more, we refer to [1,2].
 
 
@@ -34,7 +34,7 @@ The application consists of a 3D model subjected to torsional deformations. The 
          Torsional warping: vertical displacement field due to a torsional deformation. The displacement fields were exported with the help of the third party software Paraview.
 
 
-( * ) For running part of the code Numerical Geolab [2] software is needed. The software is currently under review and will be uploaded online soon.
+IMPORTANT: For running part of the script for the multiscale simulations, Numerical Geolab [2] software is needed. The software is currently under review and will be uploaded online soon.
 For more information, [contact me](mailto:filippo.masi@sydney.edu.au)
 
 
