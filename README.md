@@ -34,7 +34,7 @@ The application consists of a 3D model subjected to torsional deformations. The 
          Torsional warping: vertical displacement field due to a torsional deformation. The displacement fields were exported with the help of the third party software Paraview.
 
 
-IMPORTANT: For running part of the script for the multiscale simulations, Numerical Geolab [2] software is needed. The software is currently under review and will be uploaded online soon.
+IMPORTANT: For running part of the script for the multiscale simulations, Numerical Geolab [2] software is needed. Refer to the related github repository and install the software.
 For more information, [contact me](mailto:filippo.masi@sydney.edu.au)
 
 
@@ -45,7 +45,7 @@ If you use this code, please cite the related papers:
 
 [1] F Masi, I Stefanou (2022). "[Multiscale modeling of inelastic materials with Thermodynamics-based Artificial Neural Networks (TANN)](https://doi.org/10.1016/j.cma.2022.115190)". Computer Methods in Applied Mechanics and Engineering 398, 115190.
 
-[2] Stathas, A. and Stefanou, I., 2022. Numerical Geolab, FEniCS for inelasticity. The FEniCS Conference.
+[2] Stathas, A. and Stefanou, I., 2023. [Numerical Geolab](https://github.com/AlexSTA1993/numerical_geolab/tree/main).
 
 
     @article{masi2022multiscale,
