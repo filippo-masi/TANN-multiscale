@@ -2,8 +2,6 @@
 
 <center><img src="./TANN - Numerical Geolab/_images/abstract.png"  alt="centered image" width="50%" height="20%"></center>
 
-- repository under construction ( * )
-
 ### 1. Micromechanical simulations using the Finite Element Method - ``` lattice ```
 
 
