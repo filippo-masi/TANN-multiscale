@@ -32,10 +32,6 @@ The application consists of a 3D model subjected to torsional deformations. The 
          Torsional warping: vertical displacement field due to a torsional deformation. The displacement fields were exported with the help of the third party software Paraview.
 
 
-IMPORTANT: For running part of the script for the multiscale simulations, Numerical Geolab [2] software is needed. Refer to the related github repository and install the software.
-For more information, [contact me](mailto:filippo.masi@sydney.edu.au)
-
-
 
 ### References
 
